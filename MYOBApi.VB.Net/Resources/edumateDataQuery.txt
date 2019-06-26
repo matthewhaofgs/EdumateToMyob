@@ -1,0 +1,42 @@
+﻿select
+a.transactionz_id as id,
+a.amount,
+a.description,
+a.transaction_date,
+a.effective_date,
+a.gl_account_code,
+a.expr1,
+null as gl_account_type,
+a.item_type,
+a.tax_type,
+payment_type.payment_type,
+bank_account.gl_code as bank_gl
+
+from payment
+inner join batch on payment.batch_id = batch.batch_id
+inner join batch_transaction on batch.batch_id = batch_transaction.batch_id
+inner join bank_account on payment.bank_account_id = bank_account.bank_account_id
+inner join payment_type on payment.payment_type_id = payment_type.payment_type_id
+
+FULL OUTER JOIN (select 
+TRANSACTIONS.transactions_id as transactionz_id,
+transactions.amount,
+TRANSACTIONS.DESCRIPTION as description, 
+TRANSACTIONS.TRANSACTION_DATE as transaction_date, 
+TRANSACTIONS.EFFECTIVE_DATE as effective_date, 
+GL_ACCOUNT.CODE as gl_account_code, 
+item.code AS Expr1,
+item_type.item_type as item_type, 
+tax_type.tax_type as tax_type
+
+FROM transactions
+inner join item on transactions.item_id = item.item_id
+inner join gl_account on item.gl_account_id = gl_account.gl_account_id
+inner join tax_type on item.tax_type_id = tax_type.tax_type_id
+inner join item_type on item.item_type_id = item_type.item_type_id
+
+) as a
+on batch_transaction.transactions_id = a.transactionz_id
+
+
+where a.TRANSACTION_DATE = '06/15/2016'

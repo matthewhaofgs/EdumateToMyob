@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="edumateData" targetNamespace="http://tempuri.org/edumateData.xsd" xmlns:mstns="http://tempuri.org/edumateData.xsd" xmlns="http://tempuri.org/edumateData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.MYOBApi.VB.Net.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GL_ACCOUNTTableAdapter" GeneratorDataComponentClassName="GL_ACCOUNTTableAdapter" Name="GL_ACCOUNT" UserDataComponentName="GL_ACCOUNTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "GL_ACCOUNT_ID", "CODE", "GL_ACCOUNT", "GL_ACCOUNT_TYPE_ID", "DEBTOR_GL_FLAG", "STATUS_FLAG", "FOUNDATION_GL_FLAG", "LAST_UPDATED", "SESSION_GENERATOR_ID", "USER_SECURITY", "DONT_AGGREGATE_GL_IN_JOURNAL" FROM "OFGSODBC"."GL_ACCOUNT"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GL_ACCOUNT_ID" DataSetColumn="GL_ACCOUNT_ID" />
+              <Mapping SourceColumn="CODE" DataSetColumn="CODE" />
+              <Mapping SourceColumn="GL_ACCOUNT" DataSetColumn="GL_ACCOUNT" />
+              <Mapping SourceColumn="GL_ACCOUNT_TYPE_ID" DataSetColumn="GL_ACCOUNT_TYPE_ID" />
+              <Mapping SourceColumn="DEBTOR_GL_FLAG" DataSetColumn="DEBTOR_GL_FLAG" />
+              <Mapping SourceColumn="STATUS_FLAG" DataSetColumn="STATUS_FLAG" />
+              <Mapping SourceColumn="FOUNDATION_GL_FLAG" DataSetColumn="FOUNDATION_GL_FLAG" />
+              <Mapping SourceColumn="LAST_UPDATED" DataSetColumn="LAST_UPDATED" />
+              <Mapping SourceColumn="SESSION_GENERATOR_ID" DataSetColumn="SESSION_GENERATOR_ID" />
+              <Mapping SourceColumn="USER_SECURITY" DataSetColumn="USER_SECURITY" />
+              <Mapping SourceColumn="DONT_AGGREGATE_GL_IN_JOURNAL" DataSetColumn="DONT_AGGREGATE_GL_IN_JOURNAL" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GL_ACCOUNT_TYPETableAdapter" GeneratorDataComponentClassName="GL_ACCOUNT_TYPETableAdapter" Name="GL_ACCOUNT_TYPE" UserDataComponentName="GL_ACCOUNT_TYPETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "GL_ACCOUNT_TYPE_ID", "GL_ACCOUNT_TYPE", "LAST_UPDATED", "SESSION_GENERATOR_ID" FROM "OFGSODBC"."GL_ACCOUNT_TYPE"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GL_ACCOUNT_TYPE_ID" DataSetColumn="GL_ACCOUNT_TYPE_ID" />
+              <Mapping SourceColumn="GL_ACCOUNT_TYPE" DataSetColumn="GL_ACCOUNT_TYPE" />
+              <Mapping SourceColumn="LAST_UPDATED" DataSetColumn="LAST_UPDATED" />
+              <Mapping SourceColumn="SESSION_GENERATOR_ID" DataSetColumn="SESSION_GENERATOR_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ITEMTableAdapter" GeneratorDataComponentClassName="ITEMTableAdapter" Name="ITEM" UserDataComponentName="ITEMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "ITEM_ID", "CODE", "ITEM", "ITEM_TYPE_ID", "AMOUNT", "GL_ACCOUNT_ID", "GL_CLASS_ID", "TAX_TYPE_ID", "TAX_FLAG", "STATUS_FLAG", "TAX_DEDUCTIBLE_FLAG", "LAST_UPDATED", "SESSION_GENERATOR_ID", "USER_SECURITY", "JOB_CODE", "BUDGET_LINE", "TRANSACTION_CATEGORY_ID", "DEBTOR_CONTROL_ITEM" FROM "OFGSODBC"."ITEM"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ITEM_ID" DataSetColumn="ITEM_ID" />
+              <Mapping SourceColumn="CODE" DataSetColumn="CODE" />
+              <Mapping SourceColumn="ITEM" DataSetColumn="ITEM" />
+              <Mapping SourceColumn="ITEM_TYPE_ID" DataSetColumn="ITEM_TYPE_ID" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="GL_ACCOUNT_ID" DataSetColumn="GL_ACCOUNT_ID" />
+              <Mapping SourceColumn="GL_CLASS_ID" DataSetColumn="GL_CLASS_ID" />
+              <Mapping SourceColumn="TAX_TYPE_ID" DataSetColumn="TAX_TYPE_ID" />
+              <Mapping SourceColumn="TAX_FLAG" DataSetColumn="TAX_FLAG" />
+              <Mapping SourceColumn="STATUS_FLAG" DataSetColumn="STATUS_FLAG" />
+              <Mapping SourceColumn="TAX_DEDUCTIBLE_FLAG" DataSetColumn="TAX_DEDUCTIBLE_FLAG" />
+              <Mapping SourceColumn="LAST_UPDATED" DataSetColumn="LAST_UPDATED" />
+              <Mapping SourceColumn="SESSION_GENERATOR_ID" DataSetColumn="SESSION_GENERATOR_ID" />
+              <Mapping SourceColumn="USER_SECURITY" DataSetColumn="USER_SECURITY" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="BUDGET_LINE" DataSetColumn="BUDGET_LINE" />
+              <Mapping SourceColumn="TRANSACTION_CATEGORY_ID" DataSetColumn="TRANSACTION_CATEGORY_ID" />
+              <Mapping SourceColumn="DEBTOR_CONTROL_ITEM" DataSetColumn="DEBTOR_CONTROL_ITEM" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ITEM_TYPETableAdapter" GeneratorDataComponentClassName="ITEM_TYPETableAdapter" Name="ITEM_TYPE" UserDataComponentName="ITEM_TYPETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "ITEM_TYPE_ID", "ITEM_TYPE", "SYSTEM", "LAST_UPDATED", "SESSION_GENERATOR_ID" FROM "OFGSODBC"."ITEM_TYPE"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ITEM_TYPE_ID" DataSetColumn="ITEM_TYPE_ID" />
+              <Mapping SourceColumn="ITEM_TYPE" DataSetColumn="ITEM_TYPE" />
+              <Mapping SourceColumn="SYSTEM" DataSetColumn="SYSTEM" />
+              <Mapping SourceColumn="LAST_UPDATED" DataSetColumn="LAST_UPDATED" />
+              <Mapping SourceColumn="SESSION_GENERATOR_ID" DataSetColumn="SESSION_GENERATOR_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TAX_TYPETableAdapter" GeneratorDataComponentClassName="TAX_TYPETableAdapter" Name="TAX_TYPE" UserDataComponentName="TAX_TYPETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "TAX_TYPE_ID", "TAX_TYPE", "PERCENTAGE", "LAST_UPDATED", "SESSION_GENERATOR_ID", "TAX_DESCRIPTION" FROM "OFGSODBC"."TAX_TYPE"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TAX_TYPE_ID" DataSetColumn="TAX_TYPE_ID" />
+              <Mapping SourceColumn="TAX_TYPE" DataSetColumn="TAX_TYPE" />
+              <Mapping SourceColumn="PERCENTAGE" DataSetColumn="PERCENTAGE" />
+              <Mapping SourceColumn="LAST_UPDATED" DataSetColumn="LAST_UPDATED" />
+              <Mapping SourceColumn="SESSION_GENERATOR_ID" DataSetColumn="SESSION_GENERATOR_ID" />
+              <Mapping SourceColumn="TAX_DESCRIPTION" DataSetColumn="TAX_DESCRIPTION" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TRANSACTIONSTableAdapter" GeneratorDataComponentClassName="TRANSACTIONSTableAdapter" Name="TRANSACTIONS" UserDataComponentName="TRANSACTIONSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "TRANSACTIONS_ID", "DEBTOR_ID", "STUDENT_ID", "ITEM_ID", "DESCRIPTION", "AMOUNT", "TRANSACTION_DATE", "EFFECTIVE_DATE", "PERCENTAGE", "LAST_UPDATED", "SESSION_GENERATOR_ID", "USER_SECURITY" FROM "OFGSODBC"."TRANSACTIONS"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TRANSACTIONS_ID" DataSetColumn="TRANSACTIONS_ID" />
+              <Mapping SourceColumn="DEBTOR_ID" DataSetColumn="DEBTOR_ID" />
+              <Mapping SourceColumn="STUDENT_ID" DataSetColumn="STUDENT_ID" />
+              <Mapping SourceColumn="ITEM_ID" DataSetColumn="ITEM_ID" />
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="TRANSACTION_DATE" DataSetColumn="TRANSACTION_DATE" />
+              <Mapping SourceColumn="EFFECTIVE_DATE" DataSetColumn="EFFECTIVE_DATE" />
+              <Mapping SourceColumn="PERCENTAGE" DataSetColumn="PERCENTAGE" />
+              <Mapping SourceColumn="LAST_UPDATED" DataSetColumn="LAST_UPDATED" />
+              <Mapping SourceColumn="SESSION_GENERATOR_ID" DataSetColumn="SESSION_GENERATOR_ID" />
+              <Mapping SourceColumn="USER_SECURITY" DataSetColumn="USER_SECURITY" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW_ALL_PAYMENTSTableAdapter" GeneratorDataComponentClassName="VIEW_ALL_PAYMENTSTableAdapter" Name="VIEW_ALL_PAYMENTS" UserDataComponentName="VIEW_ALL_PAYMENTSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "TRANSACTIONS_ID", "GL_ACCOUNT_ID", "GL_CODE", "GL_ACCOUNT", "GL_CLASS", "JOB_CODE", "PAYMENT_TYPE", "DRAWER", "TRANSACTION_DATE", "DEBTOR_ID", "DEBTOR_CODE", "TITLE", "DAILY_BATCH", "AMOUNT_INC_TAX", "AMOUNT_EX_TAX", "TAX", "TAX_TYPE", "BANK_ACCOUNT", "BANK_ACCOUNT_GL_CODE", "DONT_AGGREGATE_GL_IN_JOURNAL", "TRANSACTION_CATEGORY_ID", "TRANSACTION_CATEGORY", "MEMO" FROM "OFGSODBC"."VIEW_ALL_PAYMENTS"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TRANSACTIONS_ID" DataSetColumn="TRANSACTIONS_ID" />
+              <Mapping SourceColumn="GL_ACCOUNT_ID" DataSetColumn="GL_ACCOUNT_ID" />
+              <Mapping SourceColumn="GL_CODE" DataSetColumn="GL_CODE" />
+              <Mapping SourceColumn="GL_ACCOUNT" DataSetColumn="GL_ACCOUNT" />
+              <Mapping SourceColumn="GL_CLASS" DataSetColumn="GL_CLASS" />
+              <Mapping SourceColumn="JOB_CODE" DataSetColumn="JOB_CODE" />
+              <Mapping SourceColumn="PAYMENT_TYPE" DataSetColumn="PAYMENT_TYPE" />
+              <Mapping SourceColumn="DRAWER" DataSetColumn="DRAWER" />
+              <Mapping SourceColumn="TRANSACTION_DATE" DataSetColumn="TRANSACTION_DATE" />
+              <Mapping SourceColumn="DEBTOR_ID" DataSetColumn="DEBTOR_ID" />
+              <Mapping SourceColumn="DEBTOR_CODE" DataSetColumn="DEBTOR_CODE" />
+              <Mapping SourceColumn="TITLE" DataSetColumn="TITLE" />
+              <Mapping SourceColumn="DAILY_BATCH" DataSetColumn="DAILY_BATCH" />
+              <Mapping SourceColumn="AMOUNT_INC_TAX" DataSetColumn="AMOUNT_INC_TAX" />
+              <Mapping SourceColumn="AMOUNT_EX_TAX" DataSetColumn="AMOUNT_EX_TAX" />
+              <Mapping SourceColumn="TAX" DataSetColumn="TAX" />
+              <Mapping SourceColumn="TAX_TYPE" DataSetColumn="TAX_TYPE" />
+              <Mapping SourceColumn="BANK_ACCOUNT" DataSetColumn="BANK_ACCOUNT" />
+              <Mapping SourceColumn="BANK_ACCOUNT_GL_CODE" DataSetColumn="BANK_ACCOUNT_GL_CODE" />
+              <Mapping SourceColumn="DONT_AGGREGATE_GL_IN_JOURNAL" DataSetColumn="DONT_AGGREGATE_GL_IN_JOURNAL" />
+              <Mapping SourceColumn="TRANSACTION_CATEGORY_ID" DataSetColumn="TRANSACTION_CATEGORY_ID" />
+              <Mapping SourceColumn="TRANSACTION_CATEGORY" DataSetColumn="TRANSACTION_CATEGORY" />
+              <Mapping SourceColumn="MEMO" DataSetColumn="MEMO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="edumateData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="edumateData" msprop:Generator_UserDSName="edumateData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GL_ACCOUNT" msprop:Generator_TableClassName="GL_ACCOUNTDataTable" msprop:Generator_TableVarName="tableGL_ACCOUNT" msprop:Generator_TablePropName="GL_ACCOUNT" msprop:Generator_RowDeletingName="GL_ACCOUNTRowDeleting" msprop:Generator_RowChangingName="GL_ACCOUNTRowChanging" msprop:Generator_RowEvHandlerName="GL_ACCOUNTRowChangeEventHandler" msprop:Generator_RowDeletedName="GL_ACCOUNTRowDeleted" msprop:Generator_UserTableName="GL_ACCOUNT" msprop:Generator_RowChangedName="GL_ACCOUNTRowChanged" msprop:Generator_RowEvArgName="GL_ACCOUNTRowChangeEvent" msprop:Generator_RowClassName="GL_ACCOUNTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GL_ACCOUNT_ID" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT_ID" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT_ID" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNT_IDColumn" msprop:Generator_UserColumnName="GL_ACCOUNT_ID" type="xs:int" />
+              <xs:element name="CODE" msprop:Generator_ColumnVarNameInTable="columnCODE" msprop:Generator_ColumnPropNameInRow="CODE" msprop:Generator_ColumnPropNameInTable="CODEColumn" msprop:Generator_UserColumnName="CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GL_ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNTColumn" msprop:Generator_UserColumnName="GL_ACCOUNT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GL_ACCOUNT_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT_TYPE_ID" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT_TYPE_ID" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNT_TYPE_IDColumn" msprop:Generator_UserColumnName="GL_ACCOUNT_TYPE_ID" type="xs:int" />
+              <xs:element name="DEBTOR_GL_FLAG" msprop:Generator_ColumnVarNameInTable="columnDEBTOR_GL_FLAG" msprop:Generator_ColumnPropNameInRow="DEBTOR_GL_FLAG" msprop:Generator_ColumnPropNameInTable="DEBTOR_GL_FLAGColumn" msprop:Generator_UserColumnName="DEBTOR_GL_FLAG" type="xs:short" minOccurs="0" />
+              <xs:element name="STATUS_FLAG" msprop:Generator_ColumnVarNameInTable="columnSTATUS_FLAG" msprop:Generator_ColumnPropNameInRow="STATUS_FLAG" msprop:Generator_ColumnPropNameInTable="STATUS_FLAGColumn" msprop:Generator_UserColumnName="STATUS_FLAG" type="xs:short" minOccurs="0" />
+              <xs:element name="FOUNDATION_GL_FLAG" msprop:Generator_ColumnVarNameInTable="columnFOUNDATION_GL_FLAG" msprop:Generator_ColumnPropNameInRow="FOUNDATION_GL_FLAG" msprop:Generator_ColumnPropNameInTable="FOUNDATION_GL_FLAGColumn" msprop:Generator_UserColumnName="FOUNDATION_GL_FLAG" type="xs:short" minOccurs="0" />
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:dateTime" />
+              <xs:element name="SESSION_GENERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInRow="SESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInTable="SESSION_GENERATOR_IDColumn" msprop:Generator_UserColumnName="SESSION_GENERATOR_ID" type="xs:int" />
+              <xs:element name="USER_SECURITY" msprop:Generator_ColumnVarNameInTable="columnUSER_SECURITY" msprop:Generator_ColumnPropNameInRow="USER_SECURITY" msprop:Generator_ColumnPropNameInTable="USER_SECURITYColumn" msprop:Generator_UserColumnName="USER_SECURITY" type="xs:base64Binary" />
+              <xs:element name="DONT_AGGREGATE_GL_IN_JOURNAL" msprop:Generator_ColumnVarNameInTable="columnDONT_AGGREGATE_GL_IN_JOURNAL" msprop:Generator_ColumnPropNameInRow="DONT_AGGREGATE_GL_IN_JOURNAL" msprop:Generator_ColumnPropNameInTable="DONT_AGGREGATE_GL_IN_JOURNALColumn" msprop:Generator_UserColumnName="DONT_AGGREGATE_GL_IN_JOURNAL" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GL_ACCOUNT_TYPE" msprop:Generator_TableClassName="GL_ACCOUNT_TYPEDataTable" msprop:Generator_TableVarName="tableGL_ACCOUNT_TYPE" msprop:Generator_TablePropName="GL_ACCOUNT_TYPE" msprop:Generator_RowDeletingName="GL_ACCOUNT_TYPERowDeleting" msprop:Generator_RowChangingName="GL_ACCOUNT_TYPERowChanging" msprop:Generator_RowEvHandlerName="GL_ACCOUNT_TYPERowChangeEventHandler" msprop:Generator_RowDeletedName="GL_ACCOUNT_TYPERowDeleted" msprop:Generator_UserTableName="GL_ACCOUNT_TYPE" msprop:Generator_RowChangedName="GL_ACCOUNT_TYPERowChanged" msprop:Generator_RowEvArgName="GL_ACCOUNT_TYPERowChangeEvent" msprop:Generator_RowClassName="GL_ACCOUNT_TYPERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GL_ACCOUNT_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT_TYPE_ID" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT_TYPE_ID" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNT_TYPE_IDColumn" msprop:Generator_UserColumnName="GL_ACCOUNT_TYPE_ID" type="xs:int" />
+              <xs:element name="GL_ACCOUNT_TYPE" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT_TYPE" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT_TYPE" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNT_TYPEColumn" msprop:Generator_UserColumnName="GL_ACCOUNT_TYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:dateTime" />
+              <xs:element name="SESSION_GENERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInRow="SESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInTable="SESSION_GENERATOR_IDColumn" msprop:Generator_UserColumnName="SESSION_GENERATOR_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITEM" msprop:Generator_TableClassName="ITEMDataTable" msprop:Generator_TableVarName="tableITEM" msprop:Generator_TablePropName="ITEM" msprop:Generator_RowDeletingName="ITEMRowDeleting" msprop:Generator_RowChangingName="ITEMRowChanging" msprop:Generator_RowEvHandlerName="ITEMRowChangeEventHandler" msprop:Generator_RowDeletedName="ITEMRowDeleted" msprop:Generator_UserTableName="ITEM" msprop:Generator_RowChangedName="ITEMRowChanged" msprop:Generator_RowEvArgName="ITEMRowChangeEvent" msprop:Generator_RowClassName="ITEMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_ID" msprop:Generator_ColumnPropNameInRow="ITEM_ID" msprop:Generator_ColumnPropNameInTable="ITEM_IDColumn" msprop:Generator_UserColumnName="ITEM_ID" type="xs:int" />
+              <xs:element name="CODE" msprop:Generator_ColumnVarNameInTable="columnCODE" msprop:Generator_ColumnPropNameInRow="CODE" msprop:Generator_ColumnPropNameInTable="CODEColumn" msprop:Generator_UserColumnName="CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM" msprop:Generator_ColumnVarNameInTable="columnITEM" msprop:Generator_ColumnPropNameInRow="ITEM" msprop:Generator_ColumnPropNameInTable="ITEMColumn" msprop:Generator_UserColumnName="ITEM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_TYPE_ID" msprop:Generator_ColumnPropNameInRow="ITEM_TYPE_ID" msprop:Generator_ColumnPropNameInTable="ITEM_TYPE_IDColumn" msprop:Generator_UserColumnName="ITEM_TYPE_ID" type="xs:int" />
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GL_ACCOUNT_ID" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT_ID" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT_ID" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNT_IDColumn" msprop:Generator_UserColumnName="GL_ACCOUNT_ID" type="xs:int" />
+              <xs:element name="GL_CLASS_ID" msprop:Generator_ColumnVarNameInTable="columnGL_CLASS_ID" msprop:Generator_ColumnPropNameInRow="GL_CLASS_ID" msprop:Generator_ColumnPropNameInTable="GL_CLASS_IDColumn" msprop:Generator_UserColumnName="GL_CLASS_ID" type="xs:int" />
+              <xs:element name="TAX_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnTAX_TYPE_ID" msprop:Generator_ColumnPropNameInRow="TAX_TYPE_ID" msprop:Generator_ColumnPropNameInTable="TAX_TYPE_IDColumn" msprop:Generator_UserColumnName="TAX_TYPE_ID" type="xs:int" />
+              <xs:element name="TAX_FLAG" msprop:Generator_ColumnVarNameInTable="columnTAX_FLAG" msprop:Generator_ColumnPropNameInRow="TAX_FLAG" msprop:Generator_ColumnPropNameInTable="TAX_FLAGColumn" msprop:Generator_UserColumnName="TAX_FLAG" type="xs:int" minOccurs="0" />
+              <xs:element name="STATUS_FLAG" msprop:Generator_ColumnVarNameInTable="columnSTATUS_FLAG" msprop:Generator_ColumnPropNameInRow="STATUS_FLAG" msprop:Generator_ColumnPropNameInTable="STATUS_FLAGColumn" msprop:Generator_UserColumnName="STATUS_FLAG" type="xs:int" minOccurs="0" />
+              <xs:element name="TAX_DEDUCTIBLE_FLAG" msprop:Generator_ColumnVarNameInTable="columnTAX_DEDUCTIBLE_FLAG" msprop:Generator_ColumnPropNameInRow="TAX_DEDUCTIBLE_FLAG" msprop:Generator_ColumnPropNameInTable="TAX_DEDUCTIBLE_FLAGColumn" msprop:Generator_UserColumnName="TAX_DEDUCTIBLE_FLAG" type="xs:short" minOccurs="0" />
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:dateTime" />
+              <xs:element name="SESSION_GENERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInRow="SESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInTable="SESSION_GENERATOR_IDColumn" msprop:Generator_UserColumnName="SESSION_GENERATOR_ID" type="xs:int" />
+              <xs:element name="USER_SECURITY" msprop:Generator_ColumnVarNameInTable="columnUSER_SECURITY" msprop:Generator_ColumnPropNameInRow="USER_SECURITY" msprop:Generator_ColumnPropNameInTable="USER_SECURITYColumn" msprop:Generator_UserColumnName="USER_SECURITY" type="xs:base64Binary" />
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BUDGET_LINE" msprop:Generator_ColumnVarNameInTable="columnBUDGET_LINE" msprop:Generator_ColumnPropNameInRow="BUDGET_LINE" msprop:Generator_ColumnPropNameInTable="BUDGET_LINEColumn" msprop:Generator_UserColumnName="BUDGET_LINE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANSACTION_CATEGORY_ID" msprop:Generator_ColumnVarNameInTable="columnTRANSACTION_CATEGORY_ID" msprop:Generator_ColumnPropNameInRow="TRANSACTION_CATEGORY_ID" msprop:Generator_ColumnPropNameInTable="TRANSACTION_CATEGORY_IDColumn" msprop:Generator_UserColumnName="TRANSACTION_CATEGORY_ID" type="xs:int" />
+              <xs:element name="DEBTOR_CONTROL_ITEM" msprop:Generator_ColumnVarNameInTable="columnDEBTOR_CONTROL_ITEM" msprop:Generator_ColumnPropNameInRow="DEBTOR_CONTROL_ITEM" msprop:Generator_ColumnPropNameInTable="DEBTOR_CONTROL_ITEMColumn" msprop:Generator_UserColumnName="DEBTOR_CONTROL_ITEM" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITEM_TYPE" msprop:Generator_TableClassName="ITEM_TYPEDataTable" msprop:Generator_TableVarName="tableITEM_TYPE" msprop:Generator_TablePropName="ITEM_TYPE" msprop:Generator_RowDeletingName="ITEM_TYPERowDeleting" msprop:Generator_RowChangingName="ITEM_TYPERowChanging" msprop:Generator_RowEvHandlerName="ITEM_TYPERowChangeEventHandler" msprop:Generator_RowDeletedName="ITEM_TYPERowDeleted" msprop:Generator_UserTableName="ITEM_TYPE" msprop:Generator_RowChangedName="ITEM_TYPERowChanged" msprop:Generator_RowEvArgName="ITEM_TYPERowChangeEvent" msprop:Generator_RowClassName="ITEM_TYPERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_TYPE_ID" msprop:Generator_ColumnPropNameInRow="ITEM_TYPE_ID" msprop:Generator_ColumnPropNameInTable="ITEM_TYPE_IDColumn" msprop:Generator_UserColumnName="ITEM_TYPE_ID" type="xs:int" />
+              <xs:element name="ITEM_TYPE" msprop:Generator_ColumnVarNameInTable="columnITEM_TYPE" msprop:Generator_ColumnPropNameInRow="ITEM_TYPE" msprop:Generator_ColumnPropNameInTable="ITEM_TYPEColumn" msprop:Generator_UserColumnName="ITEM_TYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEM" msprop:Generator_ColumnVarNameInTable="columnSYSTEM" msprop:Generator_ColumnPropNameInRow="SYSTEM" msprop:Generator_ColumnPropNameInTable="SYSTEMColumn" msprop:Generator_UserColumnName="SYSTEM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:dateTime" />
+              <xs:element name="SESSION_GENERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInRow="SESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInTable="SESSION_GENERATOR_IDColumn" msprop:Generator_UserColumnName="SESSION_GENERATOR_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TAX_TYPE" msprop:Generator_TableClassName="TAX_TYPEDataTable" msprop:Generator_TableVarName="tableTAX_TYPE" msprop:Generator_TablePropName="TAX_TYPE" msprop:Generator_RowDeletingName="TAX_TYPERowDeleting" msprop:Generator_RowChangingName="TAX_TYPERowChanging" msprop:Generator_RowEvHandlerName="TAX_TYPERowChangeEventHandler" msprop:Generator_RowDeletedName="TAX_TYPERowDeleted" msprop:Generator_UserTableName="TAX_TYPE" msprop:Generator_RowChangedName="TAX_TYPERowChanged" msprop:Generator_RowEvArgName="TAX_TYPERowChangeEvent" msprop:Generator_RowClassName="TAX_TYPERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TAX_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnTAX_TYPE_ID" msprop:Generator_ColumnPropNameInRow="TAX_TYPE_ID" msprop:Generator_ColumnPropNameInTable="TAX_TYPE_IDColumn" msprop:Generator_UserColumnName="TAX_TYPE_ID" type="xs:int" />
+              <xs:element name="TAX_TYPE" msprop:Generator_ColumnVarNameInTable="columnTAX_TYPE" msprop:Generator_ColumnPropNameInRow="TAX_TYPE" msprop:Generator_ColumnPropNameInTable="TAX_TYPEColumn" msprop:Generator_UserColumnName="TAX_TYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PERCENTAGE" msprop:Generator_ColumnVarNameInTable="columnPERCENTAGE" msprop:Generator_ColumnPropNameInRow="PERCENTAGE" msprop:Generator_ColumnPropNameInTable="PERCENTAGEColumn" msprop:Generator_UserColumnName="PERCENTAGE" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:dateTime" />
+              <xs:element name="SESSION_GENERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInRow="SESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInTable="SESSION_GENERATOR_IDColumn" msprop:Generator_UserColumnName="SESSION_GENERATOR_ID" type="xs:int" />
+              <xs:element name="TAX_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnTAX_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="TAX_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="TAX_DESCRIPTIONColumn" msprop:Generator_UserColumnName="TAX_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TRANSACTIONS" msprop:Generator_TableClassName="TRANSACTIONSDataTable" msprop:Generator_TableVarName="tableTRANSACTIONS" msprop:Generator_TablePropName="TRANSACTIONS" msprop:Generator_RowDeletingName="TRANSACTIONSRowDeleting" msprop:Generator_RowChangingName="TRANSACTIONSRowChanging" msprop:Generator_RowEvHandlerName="TRANSACTIONSRowChangeEventHandler" msprop:Generator_RowDeletedName="TRANSACTIONSRowDeleted" msprop:Generator_UserTableName="TRANSACTIONS" msprop:Generator_RowChangedName="TRANSACTIONSRowChanged" msprop:Generator_RowEvArgName="TRANSACTIONSRowChangeEvent" msprop:Generator_RowClassName="TRANSACTIONSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRANSACTIONS_ID" msprop:Generator_ColumnVarNameInTable="columnTRANSACTIONS_ID" msprop:Generator_ColumnPropNameInRow="TRANSACTIONS_ID" msprop:Generator_ColumnPropNameInTable="TRANSACTIONS_IDColumn" msprop:Generator_UserColumnName="TRANSACTIONS_ID" type="xs:int" />
+              <xs:element name="DEBTOR_ID" msprop:Generator_ColumnVarNameInTable="columnDEBTOR_ID" msprop:Generator_ColumnPropNameInRow="DEBTOR_ID" msprop:Generator_ColumnPropNameInTable="DEBTOR_IDColumn" msprop:Generator_UserColumnName="DEBTOR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="STUDENT_ID" msprop:Generator_ColumnVarNameInTable="columnSTUDENT_ID" msprop:Generator_ColumnPropNameInRow="STUDENT_ID" msprop:Generator_ColumnPropNameInTable="STUDENT_IDColumn" msprop:Generator_UserColumnName="STUDENT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ITEM_ID" msprop:Generator_ColumnVarNameInTable="columnITEM_ID" msprop:Generator_ColumnPropNameInRow="ITEM_ID" msprop:Generator_ColumnPropNameInTable="ITEM_IDColumn" msprop:Generator_UserColumnName="ITEM_ID" type="xs:int" />
+              <xs:element name="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" msprop:Generator_UserColumnName="DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:decimal" />
+              <xs:element name="TRANSACTION_DATE" msprop:Generator_ColumnVarNameInTable="columnTRANSACTION_DATE" msprop:Generator_ColumnPropNameInRow="TRANSACTION_DATE" msprop:Generator_ColumnPropNameInTable="TRANSACTION_DATEColumn" msprop:Generator_UserColumnName="TRANSACTION_DATE" type="xs:dateTime" />
+              <xs:element name="EFFECTIVE_DATE" msprop:Generator_ColumnVarNameInTable="columnEFFECTIVE_DATE" msprop:Generator_ColumnPropNameInRow="EFFECTIVE_DATE" msprop:Generator_ColumnPropNameInTable="EFFECTIVE_DATEColumn" msprop:Generator_UserColumnName="EFFECTIVE_DATE" type="xs:dateTime" />
+              <xs:element name="PERCENTAGE" msprop:Generator_ColumnVarNameInTable="columnPERCENTAGE" msprop:Generator_ColumnPropNameInRow="PERCENTAGE" msprop:Generator_ColumnPropNameInTable="PERCENTAGEColumn" msprop:Generator_UserColumnName="PERCENTAGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LAST_UPDATED" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATED" msprop:Generator_ColumnPropNameInRow="LAST_UPDATED" msprop:Generator_ColumnPropNameInTable="LAST_UPDATEDColumn" msprop:Generator_UserColumnName="LAST_UPDATED" type="xs:dateTime" />
+              <xs:element name="SESSION_GENERATOR_ID" msprop:Generator_ColumnVarNameInTable="columnSESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInRow="SESSION_GENERATOR_ID" msprop:Generator_ColumnPropNameInTable="SESSION_GENERATOR_IDColumn" msprop:Generator_UserColumnName="SESSION_GENERATOR_ID" type="xs:int" />
+              <xs:element name="USER_SECURITY" msprop:Generator_ColumnVarNameInTable="columnUSER_SECURITY" msprop:Generator_ColumnPropNameInRow="USER_SECURITY" msprop:Generator_ColumnPropNameInTable="USER_SECURITYColumn" msprop:Generator_UserColumnName="USER_SECURITY" type="xs:base64Binary" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VIEW_ALL_PAYMENTS" msprop:Generator_TableClassName="VIEW_ALL_PAYMENTSDataTable" msprop:Generator_TableVarName="tableVIEW_ALL_PAYMENTS" msprop:Generator_TablePropName="VIEW_ALL_PAYMENTS" msprop:Generator_RowDeletingName="VIEW_ALL_PAYMENTSRowDeleting" msprop:Generator_RowChangingName="VIEW_ALL_PAYMENTSRowChanging" msprop:Generator_RowEvHandlerName="VIEW_ALL_PAYMENTSRowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW_ALL_PAYMENTSRowDeleted" msprop:Generator_UserTableName="VIEW_ALL_PAYMENTS" msprop:Generator_RowChangedName="VIEW_ALL_PAYMENTSRowChanged" msprop:Generator_RowEvArgName="VIEW_ALL_PAYMENTSRowChangeEvent" msprop:Generator_RowClassName="VIEW_ALL_PAYMENTSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRANSACTIONS_ID" msprop:Generator_ColumnVarNameInTable="columnTRANSACTIONS_ID" msprop:Generator_ColumnPropNameInRow="TRANSACTIONS_ID" msprop:Generator_ColumnPropNameInTable="TRANSACTIONS_IDColumn" msprop:Generator_UserColumnName="TRANSACTIONS_ID" type="xs:int" />
+              <xs:element name="GL_ACCOUNT_ID" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT_ID" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT_ID" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNT_IDColumn" msprop:Generator_UserColumnName="GL_ACCOUNT_ID" type="xs:int" />
+              <xs:element name="GL_CODE" msprop:Generator_ColumnVarNameInTable="columnGL_CODE" msprop:Generator_ColumnPropNameInRow="GL_CODE" msprop:Generator_ColumnPropNameInTable="GL_CODEColumn" msprop:Generator_UserColumnName="GL_CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GL_ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnGL_ACCOUNT" msprop:Generator_ColumnPropNameInRow="GL_ACCOUNT" msprop:Generator_ColumnPropNameInTable="GL_ACCOUNTColumn" msprop:Generator_UserColumnName="GL_ACCOUNT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GL_CLASS" msprop:Generator_ColumnVarNameInTable="columnGL_CLASS" msprop:Generator_ColumnPropNameInRow="GL_CLASS" msprop:Generator_ColumnPropNameInTable="GL_CLASSColumn" msprop:Generator_UserColumnName="GL_CLASS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JOB_CODE" msprop:Generator_ColumnVarNameInTable="columnJOB_CODE" msprop:Generator_ColumnPropNameInRow="JOB_CODE" msprop:Generator_ColumnPropNameInTable="JOB_CODEColumn" msprop:Generator_UserColumnName="JOB_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAYMENT_TYPE" msprop:Generator_ColumnVarNameInTable="columnPAYMENT_TYPE" msprop:Generator_ColumnPropNameInRow="PAYMENT_TYPE" msprop:Generator_ColumnPropNameInTable="PAYMENT_TYPEColumn" msprop:Generator_UserColumnName="PAYMENT_TYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRAWER" msprop:Generator_ColumnVarNameInTable="columnDRAWER" msprop:Generator_ColumnPropNameInRow="DRAWER" msprop:Generator_ColumnPropNameInTable="DRAWERColumn" msprop:Generator_UserColumnName="DRAWER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANSACTION_DATE" msprop:Generator_ColumnVarNameInTable="columnTRANSACTION_DATE" msprop:Generator_ColumnPropNameInRow="TRANSACTION_DATE" msprop:Generator_ColumnPropNameInTable="TRANSACTION_DATEColumn" msprop:Generator_UserColumnName="TRANSACTION_DATE" type="xs:dateTime" />
+              <xs:element name="DEBTOR_ID" msprop:Generator_ColumnVarNameInTable="columnDEBTOR_ID" msprop:Generator_ColumnPropNameInRow="DEBTOR_ID" msprop:Generator_ColumnPropNameInTable="DEBTOR_IDColumn" msprop:Generator_UserColumnName="DEBTOR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEBTOR_CODE" msprop:Generator_ColumnVarNameInTable="columnDEBTOR_CODE" msprop:Generator_ColumnPropNameInRow="DEBTOR_CODE" msprop:Generator_ColumnPropNameInTable="DEBTOR_CODEColumn" msprop:Generator_UserColumnName="DEBTOR_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_UserColumnName="TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAILY_BATCH" msprop:Generator_ColumnVarNameInTable="columnDAILY_BATCH" msprop:Generator_ColumnPropNameInRow="DAILY_BATCH" msprop:Generator_ColumnPropNameInTable="DAILY_BATCHColumn" msprop:Generator_UserColumnName="DAILY_BATCH" type="xs:int" minOccurs="0" />
+              <xs:element name="AMOUNT_INC_TAX" msprop:Generator_ColumnVarNameInTable="columnAMOUNT_INC_TAX" msprop:Generator_ColumnPropNameInRow="AMOUNT_INC_TAX" msprop:Generator_ColumnPropNameInTable="AMOUNT_INC_TAXColumn" msprop:Generator_UserColumnName="AMOUNT_INC_TAX" type="xs:decimal" />
+              <xs:element name="AMOUNT_EX_TAX" msprop:Generator_ColumnVarNameInTable="columnAMOUNT_EX_TAX" msprop:Generator_ColumnPropNameInRow="AMOUNT_EX_TAX" msprop:Generator_ColumnPropNameInTable="AMOUNT_EX_TAXColumn" msprop:Generator_UserColumnName="AMOUNT_EX_TAX" type="xs:decimal" />
+              <xs:element name="TAX" msprop:Generator_ColumnVarNameInTable="columnTAX" msprop:Generator_ColumnPropNameInRow="TAX" msprop:Generator_ColumnPropNameInTable="TAXColumn" msprop:Generator_UserColumnName="TAX" type="xs:decimal" />
+              <xs:element name="TAX_TYPE" msprop:Generator_ColumnVarNameInTable="columnTAX_TYPE" msprop:Generator_ColumnPropNameInRow="TAX_TYPE" msprop:Generator_ColumnPropNameInTable="TAX_TYPEColumn" msprop:Generator_UserColumnName="TAX_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BANK_ACCOUNT" msprop:Generator_ColumnVarNameInTable="columnBANK_ACCOUNT" msprop:Generator_ColumnPropNameInRow="BANK_ACCOUNT" msprop:Generator_ColumnPropNameInTable="BANK_ACCOUNTColumn" msprop:Generator_UserColumnName="BANK_ACCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BANK_ACCOUNT_GL_CODE" msprop:Generator_ColumnVarNameInTable="columnBANK_ACCOUNT_GL_CODE" msprop:Generator_ColumnPropNameInRow="BANK_ACCOUNT_GL_CODE" msprop:Generator_ColumnPropNameInTable="BANK_ACCOUNT_GL_CODEColumn" msprop:Generator_UserColumnName="BANK_ACCOUNT_GL_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DONT_AGGREGATE_GL_IN_JOURNAL" msprop:Generator_ColumnVarNameInTable="columnDONT_AGGREGATE_GL_IN_JOURNAL" msprop:Generator_ColumnPropNameInRow="DONT_AGGREGATE_GL_IN_JOURNAL" msprop:Generator_ColumnPropNameInTable="DONT_AGGREGATE_GL_IN_JOURNALColumn" msprop:Generator_UserColumnName="DONT_AGGREGATE_GL_IN_JOURNAL" type="xs:short" minOccurs="0" />
+              <xs:element name="TRANSACTION_CATEGORY_ID" msprop:Generator_ColumnVarNameInTable="columnTRANSACTION_CATEGORY_ID" msprop:Generator_ColumnPropNameInRow="TRANSACTION_CATEGORY_ID" msprop:Generator_ColumnPropNameInTable="TRANSACTION_CATEGORY_IDColumn" msprop:Generator_UserColumnName="TRANSACTION_CATEGORY_ID" type="xs:int" />
+              <xs:element name="TRANSACTION_CATEGORY" msprop:Generator_ColumnVarNameInTable="columnTRANSACTION_CATEGORY" msprop:Generator_ColumnPropNameInRow="TRANSACTION_CATEGORY" msprop:Generator_ColumnPropNameInTable="TRANSACTION_CATEGORYColumn" msprop:Generator_UserColumnName="TRANSACTION_CATEGORY">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MEMO" msprop:Generator_ColumnVarNameInTable="columnMEMO" msprop:Generator_ColumnPropNameInRow="MEMO" msprop:Generator_ColumnPropNameInTable="MEMOColumn" msprop:Generator_UserColumnName="MEMO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4 @@
+﻿1.0.0.4 
+Added second date selector for date range (not yet impemented so is locked)
+Set date range pickers to default to todays date when form loads
+Add data button now locks after pressed to avoid double clicking accidentally 
